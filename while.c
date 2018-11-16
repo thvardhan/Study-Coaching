@@ -1,30 +1,15 @@
 #include <stdio.h>
 
 int main() {
-  int i;
   int n;
-  int k;
-  printf("Enter how many times you want to see prints\n");
+  printf("Enter the int to see its digits\n");
   scanf("%d",&n);
-  printf("Where?\n");
-  scanf("%d",&k);
-
-  for(i=k+1;i<=n;i++){
-
-    if(i%2==0){
-      continue;
-    }
 
 
-    printf("START %d\n",i);
-
+  while (n>0) {
+    printf("%d\n",n%10);
+    n/=10;
   }
-
-  //
-  // for (i = 50; i > 0; i--) {
-  //   printf("%d\n",i);
-  // }
-
 
   return 0;
 }
